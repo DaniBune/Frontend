@@ -40,11 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina bungie website 
-    <img src="readme-images/bungie homepagina.png" width="250px" alt="Homepagina van de bungie website">
+  
+  <img src="readme-images/bungie homepagina.png" width="250px" alt="Homepagina van de bungie website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Lightfall uitbreiding pagina 
-   <img src="readme-images/bungie lightfall dlc.png" width="250px" alt="Lightfall uitbreiding pagina">
+  
+  <img src="readme-images/bungie lightfall dlc.png" width="250px" alt="Lightfall uitbreiding pagina">
  
 </details>
 
