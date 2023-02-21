@@ -93,13 +93,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### Homepagina: 
-  <img src="readme-images/breakdown homepagina.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown homepagina.jpg" width="250px" alt="breakdown homepagina">
 
   ### Menu website: 
-  <img src="readme-images/breakdown menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown menu.jpg" width="250px" alt="breakdown menu">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Lightfall uitbreiding pagina: 
+  <img src="readme-images/breakdown lightfall.jpg" width="250px" alt="breakdown lightfall uitbreiding pagina">
+
+  ### Pre-order overlay: 
+  <img src="readme-images/breakdown pre-order.jpg" width="250px" alt="breakdown lightfall uitbreiding pagina">
 
 </details>
 
