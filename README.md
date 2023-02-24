@@ -101,9 +101,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Lightfall uitbreiding pagina: 
   <img src="readme-images/breakdown lightfall.jpg" width="325px" alt="breakdown lightfall uitbreiding pagina">
 
-  ### Pre-order overlay: 
-  <img src="readme-images/breakdown pre-order.jpg" width="325px" alt="breakdown lightfall uitbreiding pagina">
-
 </details>
 
 
