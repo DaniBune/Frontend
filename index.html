@@ -14,43 +14,66 @@
 
 <!--Dit is commentaar-->
 
-<body>
+<body class="home">
 	<header>
 		<nav>
-			<img src="./images/website-images/Bungie-logo-header.svg" alt="bungie logo in de nav">
-			<ul>
-				<li>
-					<img src="./images/website-images/search-icon.svg" alt="search icon">
-					<img src="./images/website-images/taal-icon.svg" alt="taal icon">
-					<img src="./images/website-images/account-icon.svg" alt="account icon">
-				</li>
-			</ul>
+			<div class="link-block">
+				<a href="/">
+					<img src="./images/website-images/Bungie-logo-header.svg" alt="bungie logo in de nav" />
+				</a>
+			</div>
 			<section>
 				<ul>
-					<li><a href="#">Join up</a></li>
-					<li><a href="#">Sign in</a></li>
+					<li>
+						<img class="icon" src="./images/website-images/search-icon.svg" alt="search icon">
+					</li>
+					<li>
+						<img class="icon" src="./images/website-images/taal-icon.svg" alt="taal icon">
+					</li>
+					<li>
+						<img class="icon" src="./images/website-images/account-icon.svg" alt="account icon">
+					</li>
+					</li>
 				</ul>
-				<ul>
-					<li><a href="#">Destiny 2</a></li>
-					<li><a href="#">Seasons</a></li>
-					<li><a href="#">Community</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Store</a></li>
-					<li><a href="#">Rewards</a></li>
-				</ul>
-				<a href="#">PlayDestiny 2</a>
+				<section class="hb">
+					<button>
+						<img src="./images/website-images/menu.png" alt="hb menu">
+					</button>
+					<ul>
+						<li>
+							<ul>
+								<li></li>
+								<li><a class="button" href="#">Join up</a></li>
+								<li><a class="button button-secondary" href="#">Sign in</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li><a href="#">Destiny 2</a></li>
+								<li><a href="#">Seasons</a></li>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Store</a></li>
+								<li><a href="#">Rewards</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="button" href="#">PlayDestiny 2</a>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</nav>
 		<section>
+			<img src="./images/website-images/homepage-logo.webp" alt="logo">
 			<h1>Our end begins</h1>
-			<img src="./images/website-images/homepage-logo.jpg" alt="logo van de lightfall dlc">
-			<a href="#">Learn more</a>
+			<a class="button" href="/lightfall.html">Learn more</a>
 		</section>
 	</header>
 
 	<main>
 		<section>
-			<h2>Featured</h2>
+			<h2><span>Featured</span></h2>
 			<ul>
 				<li>
 					<img src="./images/website-images/banner-seraph.jpg" alt="Afbeelding seraph season">
@@ -68,45 +91,60 @@
 			</ul>
 		</section>
 		<section>
-			<h2>Latest</h2>
+			<h2><span>Latest</span></h2>
 			<ul>
 				<li>
-					<h3>This week at Bungie - 02/02/2023</h3>
-					<h4>This week at Bungie, we showed some new cool weapons - 02/02/2023</h4>
+					<div>
+						<h3>This week at Bungie - 02/02/2023</h3>
+						<h4>This week at Bungie, we showed some new cool weapons - 02/02/2023</h4>
+					</div>
 					<img src="./images/website-images/news-banner-weapon.jpg" alt="afbeelding weapon">
 				</li>
 				<li>
-					<h3>Season 20 weapon tuning preview</h3>
-					<h4>You know the drill, it's almost tuning time - 01/02/2023</h4>
+					<div>
+						<h3>Season 20 weapon tuning preview</h3>
+						<h4>You know the drill, it's almost tuning time - 01/02/2023</h4>
+					</div>
 					<img src="./images/website-images/news-banner-tuning.jpg" alt="afbeelding tuning">
 				</li>
 				<li>
-					<h3>Destiny 2 Hotfix 6.3.0.7</h3>
-					<h4>The one about the missing drone - 31/01/2023</h4>
+					<div>
+						<h3>Destiny 2 Hotfix 6.3.0.7</h3>
+						<h4>The one about the missing drone - 31/01/2023</h4>
+					</div>
 					<img src="./images/website-images/news-banner-hotfix.jpeg" alt="afbeelding hotfix">
 				</li>
 				<li>
-					<h3>This week at Bungie - 26/01/2023</h3>
-					<h4>This week at Bungie, we have some announcements, reminders, and things, oh my - 26/01/2023</h4>
+					<div>
+						<h3>This week at Bungie - 26/01/2023</h3>
+						<h4>This week at Bungie, we have some announcements, reminders, and things, oh my - 26/01/2023
+					</div>
+					</h4>
 					<img src="./images/website-images/news-banner-announcement.jpg" alt="afbeelding announcement">
 				</li>
 				<li>
-					<h3>Economy updates and more coming in Lightfall</h3>
-					<h4>The economic evolution of Lightfall - 25/01/2023</h4>
+					<div>
+						<h3>Economy updates and more coming in Lightfall</h3>
+						<h4>The economic evolution of Lightfall - 25/01/2023</h4>
+					</div>
 					<img src="./images/website-images/news-banner-economy.jpg" alt="afbeelding economy">
 				</li>
 				<li>
-					<h3>Destiny 2 Hotfix 6.3.0.5</h3>
-					<h4>The one about saying goodbye to blues - 24/01/2023</h4>
+					<div>
+						<h3>Destiny 2 Hotfix 6.3.0.5</h3>
+						<h4>The one about saying goodbye to blues - 24/01/2023</h4>
+					</div>
 					<img src="./images/website-images/news-banner-hotfix.jpeg" alt="afbeelding hotfix">
 				</li>
 			</ul>
-			<a href="">More news</a>
+			<a href="" class="button button-secondary">More news</a>
 		</section>
 	</main>
 
 	<footer>
-		<img src="./images/website-images/bungie-logo-footer.png" alt="Afbeelding bungie logo"><a href="#"></a>
+
+		<img src="./images/website-images/bungie-logo-footer.png" alt="Afbeelding bungie logo">
+
 		<nav>
 			<ul>
 				<li><a href=""><em>Destiny 2</em></a></li>
@@ -159,16 +197,18 @@
 				<li><a href="">Donate</a></li>
 			</ul>
 		</nav>
-		<p>2023 Bungie, Inc. All rights reserved</p>
-		<p>Follow Us</p>
-		<ul>
-			<li><img src="./images/website-images/footer-icon-fb.jpg" alt="Facebook"></li>
-			<li><img src="./images/website-images/footer-icon-insta.jpg" alt="Instagram"></li>
-			<li><img src="./images/website-images/footer-icon-twit.jpg" alt="Twitter"></li>
-			<li><img src="./images/website-images/footer-icon-yout.jpg" alt="Youtube"></li>
-			<li><img src="./images/website-images/footer-icon-twitch.jpg" alt="Twitch"></li>
-		</ul>
-		<img src="./images/website-images/esrb-rating.jpg" alt="esrb teen rating game">
+		<section>
+			<p>2023 Bungie, Inc. All rights reserved</p>
+			<p>Follow Us</p>
+			<ul>
+				<li><img src="./images/website-images/footer-icon-fb.jpg" alt="Facebook"></li>
+				<li><img src="./images/website-images/footer-icon-insta.jpg" alt="Instagram"></li>
+				<li><img src="./images/website-images/footer-icon-twit.jpg" alt="Twitter"></li>
+				<li><img src="./images/website-images/footer-icon-yout.jpg" alt="Youtube"></li>
+				<li><img src="./images/website-images/footer-icon-twitch.jpg" alt="Twitch"></li>
+			</ul>
+			<img src="./images/website-images/esrb-rating.jpg" alt="esrb teen rating game">
+		</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

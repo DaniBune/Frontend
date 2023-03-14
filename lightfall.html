@@ -12,49 +12,64 @@
 	<link rel="icon" type="image/svg+xml" href="images/website-images/bungie-favicon.png">
 </head>
 
-<body>
+<body class="lightfall">
 	<header>
 		<nav>
-			<img src="./images/website-images/Bungie-logo-header.svg" alt="bungie logo in de nav">
-			<ul>
-				<li>
-					<img src="./images/website-images/search-icon.svg" alt="search icon">
-					<img src="./images/website-images/taal-icon.svg" alt="taal icon">
-					<img src="./images/website-images/account-icon.svg" alt="account icon">
-				</li>
-			</ul>
+			<div class="link-block">
+				<a href="/">
+					<img src="./images/website-images/Bungie-logo-header.svg" alt="bungie logo in de nav" />
+				</a>
+			</div>
 			<section>
 				<ul>
-					<li><a href="#">Join up</a></li>
-					<li><a href="#">Sign in</a></li>
+					<li>
+						<img class="icon" src="./images/website-images/search-icon.svg" alt="search icon">
+					</li>
+					<li>
+						<img class="icon" src="./images/website-images/taal-icon.svg" alt="taal icon">
+					</li>
+					<li>
+						<img class="icon" src="./images/website-images/account-icon.svg" alt="account icon">
+					</li>
+					</li>
 				</ul>
-				<ul>
-					<li><a href="#">Destiny 2</a></li>
-					<li><a href="#">Seasons</a></li>
-					<li><a href="#">Community</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Store</a></li>
-					<li><a href="#">Rewards</a></li>
-				</ul>
-				<a href="#">Play Destiny 2</a>
+				<section class="hb">
+					<button>
+						<img src="./images/website-images/menu.png" alt="hb menu">
+					</button>
+					<ul>
+						<li>
+							<ul>
+								<li></li>
+								<li><a class="button" href="#">Join up</a></li>
+								<li><a class="button button-secondary" href="#">Sign in</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li><a href="#">Destiny 2</a></li>
+								<li><a href="#">Seasons</a></li>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Store</a></li>
+								<li><a href="#">Rewards</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="button" href="#">Play Destiny 2</a>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</nav>
 		<section>
-			<h1>Available February 28, 2023</h1>
-			<img src="./images/website-images/homepage-logo.jpg" alt="logo van de lightfall dlc">
-			<a href="#">Pre-order now</a>
-			<a href="#">Gameplay Trailer</a>
+			<img src="./images/website-images/homepage-logo.webp" alt="logo">
+			<h1 class="hidden">Destiny Titanfall</h1>
+			<p>Available <time datetime="2023-28-02">february 28, 2023</time></p>
+			<a class="button button-tertiary" href="#">Pre-order now</a>
+			<a class="button" href="#"><img src="./images/website-images/play-icon.svg" />Gameplay
+				trailer</a>
 		</section>
-		<nav>
-			<img src="./images/website-images/nav lightfall.svg" alt="lightfall logo nav bar">
-			<form>
-				<select name="versies" id="versies">
-					<option value="Lightfall + Annual Pass">Lightfall + Annual Pass</option>
-					<option value="Standaard Edition">Standaard Edtion</option>
-				</select>
-			</form>
-			<a href="">Pre-order</a>
-		</nav>
 	</header>
 
 	<main>
@@ -63,9 +78,9 @@
 			<p><em>The Witness and its newest Disciple are here.</em> Begin a journey that will reveal the hidden
 				threads that bind us, the ability to unravel them, and the mastery to weave them anew. With this
 				new power in hand, find strength in your fellow Guardians and triumph in the face of annihilation.</p>
-			<a href="">Watch the reveal trailer</a>
-			<iframe width="350" height="300" src="https://www.youtube.com/embed/lfoeZLp5A7k"
-				title="Destiny 2: Lightfall - Reveal Trailer" frameborder="0"
+			<p>Watch the reveal trailer</p>
+			<iframe width="100%" src="https://www.youtube-nocookie.com/embed/lfoeZLp5A7k"
+				title="Destiny 2: Lightfall Trailer" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
 		</section>
@@ -73,21 +88,28 @@
 			<h2>Lightfall campaign</h2>
 			<ul>
 				<li>
-					<h3>New Story</h3>
-					<p>Shattered glass glints in the neon starlight as the Shadow Legion marches beneath the fleet
-						hovering over Neomuna.</p>
+					<div>
+						<h3>New Story</h3>
+						<p>Shattered glass glints in the neon starlight as the Shadow Legion marches beneath the fleet
+							hovering over Neomuna.</p>
+					</div>
 					<img src="./images/website-images/campaign image 1.jpg" alt="New story image banner">
 				</li>
 				<li>
-					<h3>Legendary Mode</h3>
-					<p>The definitive Lightfall challenge. Forge memories and strengthen the bonds of friendship by
-						overcoming the impossible.</p>
+					<div>
+						<h3>Legendary Mode</h3>
+						<p>The definitive Lightfall challenge. Forge memories and strengthen the bonds of friendship by
+							overcoming the impossible.</p>
+					</div>
 					<img src="./images/website-images/campaign image 2.jpg" alt="Legendary mode image banner">
 				</li>
 				<li>
-					<h3>Guaranteed Power</h3>
-					<p>Complete Legendary mode and be rewarded with a complete set of armor—preparing you for everything
-						that awaits on Neptune.</p>
+					<div>
+						<h3>Guaranteed Power</h3>
+						<p>Complete Legendary mode and be rewarded with a complete set of armor—preparing you for
+							everything
+							that awaits on Neptune.</p>
+					</div>
 					<img src="./images/website-images/campaign image 3.jpg" alt="Guaranteed power image banner">
 				</li>
 			</ul>
@@ -95,20 +117,21 @@
 		<section>
 			<h2>Weave the future</h2>
 			<p>Reach into the Darkness and pluck at the threads of consciousness.</p>
-			<a href="">Watch the strand trailer</a>
-			<iframe width="350" height="300" src="https://www.youtube.com/embed/jgv00uCRt60"
-				title="Destiny 2: Lightfall | Strand Trailer" frameborder="0"
+			<p>Watch the strand trailer</p>
+			<iframe src="https://www.youtube-nocookie.com/embed/jgv00uCRt60"
+				title="Destiny 2: Lightfall | Strand Trailer" frameborder="0" width="100%"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
-			<img src="./images/website-images/strand effect.jpg" alt="Strand effect image onderaan section">
 		</section>
+		<img class="full-width" src="./images/website-images/strand effect.jpg" alt="">
+
 		<section>
 			<h2>A Neon Metropolis</h2>
 			<p>Travel to a destination unlike any you've explored in Destiny 2. Cross paths with bone-chilling
 				Tormentors and valiant Cloud Striders, join the fight against the Shadow Legion, and prevent devastation
 				in the technologically advanced secret city of Neomuna.</p>
-			<a href="">Watch the Neomuna trailer</a>
-			<iframe width="350" height="300" src="https://www.youtube.com/embed/gCEeCFlV0IA"
+			<p>Watch the Neomuna trailer</p>
+			<iframe width="100%" src="https://www.youtube-nocookie.com/embed/gCEeCFlV0IA"
 				title="Destiny 2: Lightfall | Neomuna Environment Trailer" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
@@ -129,8 +152,8 @@
 			<p>We find ourselves challenged by a strength unmatched by any in recorded history. How does one stand
 				against such a force?
 				This is how.</p>
-			<a href="">Watch the weapons & gear trailer</a>
-			<iframe width="350" height="300" src="https://www.youtube.com/embed/LK2zmFr5wV4"
+			<p>Watch the weapons & gear trailer</p>
+			<iframe width="100%" src="https://www.youtube-nocookie.com/embed/LK2zmFr5wV4"
 				title="Destiny 2: Lightfall | Weapons and Gear Trailer" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
@@ -223,13 +246,15 @@
 				</li>
 			</ul>
 		</section>
-		<section>
-			<img src="./images/website-images/bottom banner.jpg" alt="bottom banner website">
-		</section>
+
+		<img src="./images/website-images/bottom banner.jpg" alt="bottom banner website">
+
 	</main>
 
 	<footer>
-		<img src="./images/website-images/bungie-logo-footer.png" alt="Afbeelding bungie logo"><a href="#"></a>
+
+		<img src="./images/website-images/bungie-logo-footer.png" alt="Afbeelding bungie logo">
+
 		<nav>
 			<ul>
 				<li><a href=""><em>Destiny 2</em></a></li>
@@ -282,15 +307,18 @@
 				<li><a href="">Donate</a></li>
 			</ul>
 		</nav>
-		<p>2023 Bungie, Inc. All rights reserved</p>
-		<p>Follow Us</p>
-		<ul>
-			<li><img src="./images/website-images/footer-icon-fb.jpg" alt="Facebook"></li>
-			<li><img src="./images/website-images/footer-icon-insta.jpg" alt="Instagram"></li>
-			<li><img src="./images/website-images/footer-icon-twit.jpg" alt="Twitter"></li>
-			<li><img src="./images/website-images/footer-icon-yout.jpg" alt="Youtube"></li>
-			<li><img src="./images/website-images/footer-icon-twitch.jpg" alt="Twitch"></li>
-		</ul>
+		<section>
+			<p>2023 Bungie, Inc. All rights reserved</p>
+			<p>Follow Us</p>
+			<ul>
+				<li><img src="./images/website-images/footer-icon-fb.jpg" alt="Facebook"></li>
+				<li><img src="./images/website-images/footer-icon-insta.jpg" alt="Instagram"></li>
+				<li><img src="./images/website-images/footer-icon-twit.jpg" alt="Twitter"></li>
+				<li><img src="./images/website-images/footer-icon-yout.jpg" alt="Youtube"></li>
+				<li><img src="./images/website-images/footer-icon-twitch.jpg" alt="Twitch"></li>
+			</ul>
+			<img src="./images/website-images/esrb-rating.jpg" alt="esrb teen rating game">
+		</section>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

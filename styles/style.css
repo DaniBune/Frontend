@@ -1,34 +1,462 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-button, summary {
-	cursor: pointer;
-}
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+/* global */
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --text-color-primary: #f5f5f5;
+  --text-color-secondary: rgba(245, 245, 245, 0.8);
+  --bg-color: #0a0b0e;
+  --border-radius: 5px;
+  --nav-spacing: 0.5rem;
+  --nav-height: 4rem;
+  --button-padding: 0 5px;
+  --page-padding: 0 1rem;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
+/* utility */
 
+.button {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: var(--text-color-primary);
+  background-color: rgba(183, 140, 37, 0.8);
+  position: relative;
+  display: inline-flex;
+  gap: 1ch;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffce1f;
+}
 
+.button img {
+  height: 1em;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+.button-secondary {
+  background-color: rgb(245, 245, 245, 0.2);
+  border-color: rgb(245, 245, 245);
+}
 
-/* jouw code */
+.button-tertiary {
+  background-color: rgb(220, 90, 160, 0.2);
+  border-color: rgb(220, 90, 160);
+}
 
+.link-block {
+  position: relative;
+}
+
+.link-block a:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* basic */
+
+html {
+  background-color: var(--bg-color);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--text-color-primary);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home h2 {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid var(--text-color-primary);
+  font-size: 1rem;
+}
+
+.home h3 {
+  margin: 0;
+}
+
+.home h4 {
+  font-size: 0.75rem;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.home h2 span {
+  background-color: var(--text-color-primary);
+  color: var(--bg-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.home main,
+footer {
+  padding: var(--page-padding);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+main img,
+header > section img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* header */
+
+header nav {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 10px;
+  height: var(--nav-height);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  gap: var(--nav-spacing);
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+  padding: var(--button-padding);
+}
+
+header nav ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+header nav section {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: var(--nav-spacing);
+}
+
+header nav a img {
+  width: 9rem;
+  height: var(--nav-height);
+  margin-right: 1rem;
+}
+
+header nav section.hb ul,
+header nav section.hb li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color-secondary);
+}
+
+header nav section.hb ul .button {
+  width: 100%;
+}
+
+header nav section.hb > ul {
+  inset: 0;
+  top: 4rem;
+  z-index: 1;
+  position: fixed;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  background: var(--bg-color);
+}
+
+header nav section.hb.open > ul {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+header nav section.hb button {
+  padding: var(--button-padding);
+  background: none;
+  border: none;
+}
+
+header nav section.hb button img {
+  width: 24px;
+}
+
+header > section {
+  margin-top: var(--nav-height);
+  background-image: url("../images/website-images/homepage-banner.jpg");
+  background-position: center top;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-size: cover;
+}
+
+/* header lightfall additions */
+
+.lightfall header > section {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #0a0b0e;
+  padding: 400px 20px 75px;
+}
+
+.lightfall header section p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lightfall header section .button {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.lightfall header section p time {
+  font-weight: normal;
+}
+
+.lightfall header > section {
+  background-image: url("../images/website-images/lightfall-banner.jpg");
+}
+
+/* content */
+
+main,
+footer,
+main section,
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home main,
+footer {
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+main section {
+  gap: 1rem;
+}
+
+main > section:nth-of-type(1) ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+main > section:nth-of-type(1) ul li {
+  position: relative;
+  max-width: 170px;
+}
+
+main > section:nth-of-type(1) ul li img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  margin-bottom: 0.5rem;
+}
+
+main > section:nth-of-type(1) ul li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+main > section:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main > section:nth-of-type(2) ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+.home main > section:nth-of-type(2) ul li div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.home main > section:nth-of-type(2) ul li img {
+  object-fit: cover;
+  width: 120px;
+  height: 100px;
+  flex: 1 0;
+}
+
+main > section:nth-of-type(2) ul li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+footer {
+  gap: 2rem;
+}
+
+footer nav,
+footer section {
+  width: 100%;
+}
+
+footer nav,
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  gap: 3rem;
+}
+
+footer ul {
+  gap: 1rem;
+}
+
+footer section p {
+  margin: 0;
+}
+footer section {
+  gap: 1rem;
+}
+
+footer section ul {
+  flex-direction: row;
+}
+
+/* Lightfall content */
+
+.lightfall main > section {
+  padding: var(--page-padding);
+  padding-bottom: 20px;
+}
+
+.lightfall main section:nth-of-type(1) {
+  --block-color: pink;
+}
+
+.lightfall main section:nth-of-type(2) {
+  --block-color: green;
+}
+
+.lightfall main section:nth-of-type(3) {
+  --block-color: blue;
+}
+
+.lightfall main section:nth-of-type(4) {
+  --block-color: red;
+}
+
+.lightfall main section:nth-of-type(5) {
+  --block-color: yellow;
+}
+
+.lightfall main > section:nth-of-type(1) {
+  background-color: #0a2a3c;
+  background-image: url(../images/website-images/homepage-banner.jpg);
+}
+
+.lightfall main > section:nth-of-type(2) {
+  background-image: url("../images/website-images/lightfall campaign banner.jpg");
+  background-color: #101c0f;
+}
+
+.lightfall main > section:nth-of-type(3) {
+  background-image: url("../images/website-images/strand banner.jpg");
+}
+
+.lightfall main > section:nth-of-type(4) {
+  background-image: url("../images/website-images/neomuna\ banner.jpg");
+}
+
+.lightfall main > section:nth-of-type(5) {
+  background-image: url("../images/website-images/gear\ image\ 1.jpg");
+}
+
+.lightfall main > section:not(:last-of-type) h2 {
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 300px 0 40px 0;
+  text-align: center;
+  background-size: contain;
+  background-position: center top;
+  position: relative;
+}
+
+.lightfall main > section:not(:last-of-type) {
+  text-align: center;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lightfall main > section:not(:last-of-type) h2::after {
+  content: "";
+  height: 5px;
+  width: 75px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  background-color: var(--block-color);
+  /* Aan vriend gevraagd hoe ik absolute vanuit het midden zet */
+  transform: translateX(-50%);
+  display: block;
+}
+
+.lightfall main section p:nth-of-type(2) {
+  text-transform: uppercase;
+  color: var(--block-color);
+}
+
+.lightfall main section:nth-of-type(2) ul li {
+  flex-direction: column-reverse;
+}
+
+iframe {
+  aspect-ratio: 560/315;
+}
