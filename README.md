@@ -144,5 +144,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 11. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
 12. https://www.w3schools.com/cssref/sel_nth-of-type.php
 13. https://www.w3schools.com/cssref/css3_pr_background-size.php
+14. https://www.freecodecamp.org/news/css-unit-guide/#:~:text=The%20CSS%20ch%20unit%20is,with%20proportional%20fonts%20like%20Arial.
 
 </details>

@@ -10,9 +10,7 @@
   --page-padding: 0 1rem;
 }
 
-*,
-*::after,
-*::before {
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,6 +23,7 @@
   background-color: rgba(183, 140, 37, 0.8);
   position: relative;
   display: inline-flex;
+  /* https://www.freecodecamp.org/news/css-unit-guide/#:~:text=The%20CSS%20ch%20unit%20is,with%20proportional%20fonts%20like%20Arial.*/
   gap: 1ch;
   padding: 12px 24px;
   align-items: center;
