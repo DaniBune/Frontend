@@ -358,7 +358,7 @@ footer section ul {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #0a0b0e;
-  padding: 400px 20px 75px;
+  padding: 300px 20px 75px;
 }
 
 .lightfall header section p {
@@ -399,6 +399,7 @@ footer section ul {
 .lightfall main > section:nth-of-type(3) {
   background-image: url("../images/website-images/strand banner.jpg");
   --block-color: #a1fec0;
+  background-color: #0a0e0c;
 }
 
 .lightfall main > section:nth-of-type(4) {
@@ -456,6 +457,7 @@ footer section ul {
 
 .lightfall main section:nth-of-type(2) ul li {
   flex-direction: column-reverse;
+  text-align: left;
 }
 
 .lightfall main section:nth-of-type(6) ul {
@@ -469,5 +471,6 @@ footer section ul {
 }
 
 iframe {
+  /* Op aanbeveling van Bas: https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
   aspect-ratio: 560/315;
 }
